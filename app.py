@@ -1,3 +1,46 @@
+# import streamlit as st
+# from src.pipeline.predict_pipeline import CustomData, PredictPipeline
+
+# st.set_page_config(page_title="Student Exam Performance Predictor", layout="centered")
+
+# st.markdown("# Student Exam Performance Indicator")
+# st.markdown("### Predict Your Maths Score")
+
+# # Collect user input
+# gender = st.selectbox("Gender", ["Male", "Female"])
+# ethnicity = st.selectbox("Race/Ethnicity", ["Group A", "Group B", "Group C", "Group D", "Group E"])
+# parental_education = st.selectbox(
+#     "Parental Level of Education",
+#     ["Some High School", "High School", "Some College", "Associate's Degree", "Bachelor's Degree", "Master's Degree"]
+# )
+# lunch = st.selectbox("Lunch Type", ["Standard", "Free/Reduced"])
+# prep_course = st.selectbox("Test Preparation Course", ["None", "Completed"])
+# reading_score = st.number_input("Reading Score", min_value=0, max_value=100, step=1)
+# writing_score = st.number_input("Writing Score", min_value=0, max_value=100, step=1)
+
+# # Prediction
+# if st.button("Predict Maths Score"):
+#     try:
+#         data = CustomData(
+#             gender=gender.lower(),
+#             race_ethnicity=ethnicity.lower(),
+#             parental_level_of_education=parental_education.lower(),
+#             lunch=lunch.lower(),
+#             test_preparation_course=prep_course.lower(),
+#             reading_score=reading_score,
+#             writing_score=writing_score
+#         )
+#         pred_df = data.get_data_as_data_frame()
+#         pipeline = PredictPipeline()
+#         prediction = pipeline.predict(pred_df)
+
+#         st.success(f"🎯 Predicted Maths Score: {prediction[0]:.2f}")
+
+#     except Exception as e:
+#         st.error(f"⚠️ An error occurred: {str(e)}")
+
+
+
 from flask import Flask, request, render_template
 import logging
 
