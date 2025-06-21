@@ -1,3 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+
+# Artifacts
+artifacts/
+catboost_info/
+*.pkl
+
+# Notebooks (if not needed)
+notebook/
+
+# System files
+.DS_Store
+
+# IDE/Editor files
+.vscode/
+*.swp
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
