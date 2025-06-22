@@ -4,7 +4,7 @@ A machine learning application designed to predict a student's math score based 
 
 ## Overview
 
-Student Exam Performance Predictor is an end-to-end project that demonstrates a complete machine learning lifecycle. It handles everything from data ingestion, preprocessing, model training with hyperparameter tuning, evaluation. The final model is exposed via both Flask and Streamlit interfaces for public interaction.
+Student Performance Indicator is an end-to-end project that demonstrates a complete machine learning lifecycle. It handles everything from data ingestion, preprocessing, model training with hyperparameter tuning, evaluation. The final model is exposed via both Flask and Streamlit interfaces for public interaction.
 
 - Custom data pipelines and feature engineering
 - Model selection from multiple regressors with evaluation
